@@ -11,14 +11,16 @@ https://backend-leicester.fernandochecchi.vercel.app/
         <li>Get ultimos 10 partidos Leicester                                                 --->  /api/matches</li>
         <li>Get partidos de Leicester por un intervalo                                        --->  /api/interval/:start/:end</li>
         <li>Get puntos de Leicester por un rango de partidos                                  --->  /api/range/:start/:end</li>
-        <li>Post partido de Leicester          {
-    "idMatch": 55555,
-    "teamLocal": "Luton Town",
-    "teamVisitor": "Leicester City",
-    "scoreLocal": 0,
-    "scoreVisitor": 15,
-    "competition": "Champions",
-    "gameWeek": 3,
-    "date": "24 Sep 2019"
-}                         --->  /api/add</li>
+        <li>Post partido de Leicester                                                        --->  /api/add</li>
+                 
     </ul>
+   <p> {</br>
+    "idMatch": 55555,</br>
+    "teamLocal": "Luton Town",</br> 
+    "teamVisitor": "Leicester City",</br>
+    "scoreLocal": 0,</br>
+    "scoreVisitor": 15,</br>
+    "competition": "Champions",</br>
+    "gameWeek": 3,</br>
+    "date": "25 Dec 2019"</br>
+}</p>
