@@ -31,7 +31,8 @@ router.post('/register', async (req, res, next) => {
         password
     })
     user.password = await user.encryptPassword(user.password)
-    await user.save();
+    await user.save()
+    .catch(err => res.send('Error al registrarse'))
     const token = jwt.sign({id: user._id}, process.env.secret, {
         expiresIn: 60 * 60 * 6
     })

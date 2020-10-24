@@ -12,7 +12,7 @@ const auth = require('./routes/authController')
 app.use(bodyParser.json())
 app.use(cors())
 app.use('/api', partidos)
-app.use(auth)
+app.use('/auth', auth)
 app.set('superScret', process.env.secret)
 
 //ejecuta la funcion data a la hora programada
@@ -20,6 +20,6 @@ const data = require('./controllers/functions')
 var day = schedule.scheduleJob('0 0 0 * *', data())
 
 
-app.listen(3000);
+//app.listen(3000);
 
 module.exports = app
