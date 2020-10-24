@@ -5,7 +5,7 @@ https://backend-leicester.fernandochecchi.vercel.app/
 
 <h2>Calls</h2>
     <ul>
-        <li>Get todos los partidos Leicester (aprox 60)                                       --->  /api</li>
+        <li>Get todos los partidos Leicester (aprox 80)                                       --->  /api</li>
         <li>Get resultado ultimo partido Leicester                                            --->  /api/latest</li>
         <li>Get busca resultado de un partido Leicester por id (11111) o fecha (AAAA MM DD)   --->  /api/find/:id</li>
         <li>Get ultimos 10 partidos Leicester                                                 --->  /api/matches</li>
