@@ -2,6 +2,7 @@ const express = require ('express')
 const router = express.Router()
 const jwt = require('jsonwebtoken')
 require("dotenv").config();
+const verifyToken = require('../controllers/verifyToken')
 
 const User = require ('../models/User')
 
@@ -39,8 +40,8 @@ router.post('/register', async (req, res, next) => {
 })
 
 //verifica si esta registrado (como header)
-router.get('/me', async (req, res, next) =>{
-    const user = await User.findById(req.username, { password: 0 })
+router.get('/me', verifyToken, async (req, res, next) =>{
+    const user = await User.findById(req.userId, { password: 0 })
     if (!user) {
         return res.status(404).send('No user found')
     }
